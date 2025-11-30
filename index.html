@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Hospital Management System</h1>
+
+    <div class="container">
+        <!-- Patients -->
+        <section>
+            <h2>Patients</h2>
+            <form id="patientForm">
+                <input type="text" placeholder="Name" id="pname" required>
+                <input type="number" placeholder="Age" id="page" required>
+                <input type="text" placeholder="Gender" id="pgender" required>
+                <input type="text" placeholder="Disease" id="pdisease" required>
+                <button type="submit">Add Patient</button>
+            </form>
+            <ul id="patientList"></ul>
+        </section>
+
+        <!-- Doctors -->
+        <section>
+            <h2>Doctors</h2>
+            <form id="doctorForm">
+                <input type="text" placeholder="Name" id="dname" required>
+                <input type="text" placeholder="Specialization" id="dspec" required>
+                <button type="submit">Add Doctor</button>
+            </form>
+            <ul id="doctorList"></ul>
+        </section>
+
+        <!-- Medicines -->
+        <section>
+            <h2>Medicines</h2>
+            <form id="medicineForm">
+                <input type="text" placeholder="Name" id="mname" required>
+                <input type="number" step="0.01" placeholder="Price" id="mprice" required>
+                <button type="submit">Add Medicine</button>
+            </form>
+            <ul id="medicineList"></ul>
+        </section>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
