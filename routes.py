@@ -44,3 +44,4 @@ def add_medicine():
 def get_medicines():
     medicines = Medicine.query.all()
     return jsonify([{"id": m.id, "name": m.name, "price": m.price} for m in medicines])
+
